@@ -2,6 +2,8 @@
 
 Preforms a search starting after each cursor. If a result is found, the cursor is moved to select the result. Basically acts just like a normal search but is repeated for each cursor.
 
+Supports both plain and RegExp searches.
+
 
 ## Features
 
@@ -16,6 +18,8 @@ Preforms a search starting after each cursor. If a result is found, the cursor i
 ------------------------------------------|-------------
 `yo1dog.multi-cursor-search.plainSearch`  | Preform plain search.
 `yo1dog.multi-cursor-search.regexpSearch` | Preform RegExp search.
+
+If you prefer RegExp searches over plain searches, you can switch the default keybindings.
 
 
 ## Extension Configuration
