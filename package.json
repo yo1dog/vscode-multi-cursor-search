@@ -2,7 +2,7 @@
   "name": "multi-cursor-search",
   "displayName": "Multi-Cursor Search",
   "description": "Search from multiple cursors at once.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "yo1dog",
   "engines": {
     "vscode": "^1.1.36"

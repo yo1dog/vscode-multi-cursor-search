@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
+## [1.0.2] - 2019-08-01
+### Fixed
+- Spelling mistakes.
+
 ## [1.0.1] - 2019-08-01
 ### Changed
 - Updated readme.
@@ -13,5 +17,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 ### Added
 - Inital Release
 
-[Unreleased]: https://github.com/yo1dog/vscode-multi-cursor-search/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/yo1dog/vscode-multi-cursor-search/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/yo1dog/vscode-multi-cursor-search/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/yo1dog/vscode-multi-cursor-search/compare/v1.0.0...v1.0.1
