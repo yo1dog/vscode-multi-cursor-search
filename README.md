@@ -1,6 +1,6 @@
 # multi-cursor-search
 
-Preforms a search starting after each cursor. If a result is found, the cursor is moved to select the result. Basically acts just like a normal search but is repeated for each cursor.
+Performs a search starting after each cursor. If a result is found, the cursor is moved to select the result. Basically acts just like a normal search but is repeated for each cursor.
 
 Supports both plain and RegExp searches.
 
@@ -16,8 +16,8 @@ Supports both plain and RegExp searches.
 
  Command                                  | Description
 ------------------------------------------|-------------
-`yo1dog.multi-cursor-search.plainSearch`  | Preform plain search.
-`yo1dog.multi-cursor-search.regexpSearch` | Preform RegExp search.
+`yo1dog.multi-cursor-search.plainSearch`  | Perform plain search.
+`yo1dog.multi-cursor-search.regexpSearch` | Perform RegExp search.
 
 If you prefer RegExp searches over plain searches, you can switch the default keybindings.
 
@@ -26,10 +26,10 @@ If you prefer RegExp searches over plain searches, you can switch the default ke
 
  Configuration                              | Description
 --------------------------------------------|-------------
-`multiCursorSearch.plainSearch.ignoreCase`  | Specifies if case should be ignored when preforming **plain searches**. Internaly, this enables the `i` RegExp flag.
-`multiCursorSearch.regexpSearch.ignoreCase` | Specifies if the ignore case (`i`) flag should be used when preforming **RegExp searches**.
-`multiCursorSearch.regexpSearch.multiline`  | Specifies if the multiline (`m`) flag should be used when preforming **RegExp searches**.
-`multiCursorSearch.regexpSearch.dotAll`     | Specifies if the "dotAll" (`s`) flag should be used when preforming **RegExp searches**.
+`multiCursorSearch.plainSearch.ignoreCase`  | Specifies if case should be ignored when performing **plain searches**. Internaly, this enables the `i` RegExp flag.
+`multiCursorSearch.regexpSearch.ignoreCase` | Specifies if the ignore case (`i`) flag should be used when performing **RegExp searches**.
+`multiCursorSearch.regexpSearch.multiline`  | Specifies if the multiline (`m`) flag should be used when performing **RegExp searches**.
+`multiCursorSearch.regexpSearch.dotAll`     | Specifies if the "dotAll" (`s`) flag should be used when performing **RegExp searches**.
 
 See the [JavaScript RegExp docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters) for more details on the RegExp flags.
 
