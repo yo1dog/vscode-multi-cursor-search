@@ -1,0 +1,96 @@
+{
+  "name": "multi-cursor-search",
+  "displayName": "Multi-Cursor Search",
+  "description": "Search from multiple cursors at once.",
+  "version": "1.0.0",
+  "publisher": "yo1dog",
+  "engines": {
+    "vscode": "^1.1.36"
+  },
+  "license": "MIT",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:yo1dog.multi-cursor-search.plainSearch",
+    "onCommand:yo1dog.multi-cursor-search.regexpSearch"
+  ],
+  "main": "./extension/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "yo1dog.multi-cursor-search.plainSearch",
+        "title": "Multi-Cursor Plain Search"
+      },
+      {
+        "command": "yo1dog.multi-cursor-search.regexpSearch",
+        "title": "Multi-Cursor RegExp Search"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "yo1dog.multi-cursor-search.plainSearch",
+        "key": "alt+f",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "yo1dog.multi-cursor-search.regexpSearch",
+        "key": "alt+shift+f",
+        "when": "editorTextFocus"
+      }
+    ],
+    "configuration": {
+      "title": "Multi-Cursor Search",
+      "properties": {
+        "multiCursorSearch.plainSearch.ignoreCase": {
+          "markdownDescription": "Specifies if case should be ignored when preforming **plain searches**. Internaly, this enables the `i` RegExp flag. See the [JavaScript RegExp docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters).",
+          "type": "boolean",
+          "default": true,
+          "scope": "application"
+        },
+        "multiCursorSearch.regexpSearch.ignoreCase": {
+          "markdownDescription": "Specifies if the ignore case (`i`) flag should be used when preforming **RegExp searches**. See the [JavaScript RegExp docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters).",
+          "type": "boolean",
+          "default": true,
+          "scope": "application"
+        },
+        "multiCursorSearch.regexpSearch.multiline": {
+          "markdownDescription": "Specifies if the multiline (`m`) flag should be used when preforming **RegExp searches**. See the [JavaScript RegExp docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters).",
+          "type": "boolean",
+          "default": true,
+          "scope": "application"
+        },
+        "multiCursorSearch.regexpSearch.dotAll": {
+          "markdownDescription": "Specifies if the \"dotAll\" (`s`) flag should be used when preforming **RegExp searches**. See the [JavaScript RegExp docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters).",
+          "type": "boolean",
+          "default": true,
+          "scope": "application"
+        },
+        "multiCursorSearch.regexpSearch.unicode": {
+          "markdownDescription": "Specifies if the Unicode (`u`) flag should be used when preforming **RegExp searches**. See the [JavaScript RegExp docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters).",
+          "type": "boolean",
+          "default": true,
+          "scope": "application"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "vscode": "^1.1.36"
+  },
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/yo1dog/vscode-multi-cursor-search/issues",
+    "email": "mike@yo1.dog"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yo1dog/vscode-multi-cursor-search.git"
+  },
+  "homepage": "https://github.com/yo1dog/vscode-multi-cursor-search"
+}
