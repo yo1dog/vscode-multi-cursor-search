@@ -73,35 +73,35 @@
       "title": "Multi-Cursor Search",
       "properties": {
         "multiCursorSearch.plainSearch.ignoreCase": {
-          "description": "Specifies if case should be ignored when performing plain searches. Internally, this enables the `i` regex flag.",
+          "description": "Specifies if case should be ignored when performing plain searches. Internally, this enables the i regex flag.",
           "markdownDescription": "Specifies if case should be ignored when performing **plain searches**. Internally, this enables the `i` regex flag. See the [JavaScript RegExp docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters).",
           "type": "boolean",
           "default": true,
           "scope": "application"
         },
         "multiCursorSearch.regexSearch.ignoreCase": {
-          "description": "Specifies if the ignore case (`i`) flag should be used when performing regex searches.",
+          "description": "Specifies if the ignore case (i) flag should be used when performing regex searches.",
           "markdownDescription": "Specifies if the ignore case (`i`) flag should be used when performing **regex searches**. See the [JavaScript RegExp docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters).",
           "type": "boolean",
           "default": true,
           "scope": "application"
         },
         "multiCursorSearch.regexSearch.multiline": {
-          "description": "Specifies if the multiline (`m`) flag should be used when performing regex searches.",
+          "description": "Specifies if the multiline (m) flag should be used when performing regex searches.",
           "markdownDescription": "Specifies if the multiline (`m`) flag should be used when performing **regex searches**. See the [JavaScript RegExp docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters).",
           "type": "boolean",
           "default": true,
           "scope": "application"
         },
         "multiCursorSearch.regexSearch.dotAll": {
-          "description": "Specifies if the \"dotAll\" (`s`) flag should be used when performing regex searches.",
+          "description": "Specifies if the \"dotAll\" (s) flag should be used when performing regex searches.",
           "markdownDescription": "Specifies if the \"dotAll\" (`s`) flag should be used when performing **regex searches**. See the [JavaScript RegExp docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters).",
           "type": "boolean",
           "default": true,
           "scope": "application"
         },
         "multiCursorSearch.regexSearch.unicode": {
-          "description": "Specifies if the Unicode (`u`) flag should be used when performing regex searches.",
+          "description": "Specifies if the Unicode (u) flag should be used when performing regex searches.",
           "markdownDescription": "Specifies if the Unicode (`u`) flag should be used when performing **regex searches**. See the [JavaScript RegExp docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters).",
           "type": "boolean",
           "default": true,
