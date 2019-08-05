@@ -5,6 +5,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
+## [2.0.0] - 2019-08-04
+### Added
+- Select between
+- Expand selection
+- Advanced search
+
+### Changed
+- Default keybindings
+
 ## [1.0.2] - 2019-08-01
 ### Fixed
 - Spelling mistakes.
@@ -17,6 +26,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 ### Added
 - Inital Release
 
-[Unreleased]: https://github.com/yo1dog/vscode-multi-cursor-search/compare/v1.0.2...HEAD
+[Unreleased]: https://github.com/yo1dog/vscode-multi-cursor-search/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/yo1dog/vscode-multi-cursor-search/compare/v1.0.2...v2.0.0
 [1.0.2]: https://github.com/yo1dog/vscode-multi-cursor-search/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/yo1dog/vscode-multi-cursor-search/compare/v1.0.0...v1.0.1

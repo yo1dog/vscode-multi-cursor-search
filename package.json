@@ -2,7 +2,7 @@
   "name": "multi-cursor-search",
   "displayName": "Multi-Cursor Search",
   "description": "Search from multiple cursors at once.",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "publisher": "yo1dog",
   "engines": {
     "vscode": "^1.1.36"
@@ -13,7 +13,10 @@
   ],
   "activationEvents": [
     "onCommand:yo1dog.multi-cursor-search.plainSearch",
-    "onCommand:yo1dog.multi-cursor-search.regexpSearch"
+    "onCommand:yo1dog.multi-cursor-search.plainSearchSelectBetween",
+    "onCommand:yo1dog.multi-cursor-search.regexSearch",
+    "onCommand:yo1dog.multi-cursor-search.regexSearchSelectBetween",
+    "onCommand:yo1dog.multi-cursor-search.advancedSearch"
   ],
   "main": "./extension/extension.js",
   "contributes": {
@@ -23,8 +26,20 @@
         "title": "Multi-Cursor Plain Search"
       },
       {
-        "command": "yo1dog.multi-cursor-search.regexpSearch",
-        "title": "Multi-Cursor RegExp Search"
+        "command": "yo1dog.multi-cursor-search.plainSearchSelectBetween",
+        "title": "Multi-Cursor Plain Search (Select Between)"
+      },
+      {
+        "command": "yo1dog.multi-cursor-search.regexSearch",
+        "title": "Multi-Cursor Regex Search"
+      },
+      {
+        "command": "yo1dog.multi-cursor-search.regexSearchSelectBetween",
+        "title": "Multi-Cursor Regex Search (Select Between)"
+      },
+      {
+        "command": "yo1dog.multi-cursor-search.advancedSearch",
+        "title": "Multi-Cursor Advanced Search"
       }
     ],
     "keybindings": [
@@ -34,8 +49,23 @@
         "when": "editorTextFocus"
       },
       {
-        "command": "yo1dog.multi-cursor-search.regexpSearch",
+        "command": "yo1dog.multi-cursor-search.plainSearchSelectBetween",
         "key": "alt+shift+f",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "yo1dog.multi-cursor-search.regexSearch",
+        "key": "alt+g",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "yo1dog.multi-cursor-search.regexSearchSelectBetween",
+        "key": "alt+shift+g",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "yo1dog.multi-cursor-search.advancedSearch",
+        "key": "alt+h",
         "when": "editorTextFocus"
       }
     ],
@@ -43,31 +73,31 @@
       "title": "Multi-Cursor Search",
       "properties": {
         "multiCursorSearch.plainSearch.ignoreCase": {
-          "markdownDescription": "Specifies if case should be ignored when performing **plain searches**. Internally, this enables the `i` RegExp flag. See the [JavaScript RegExp docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters).",
+          "markdownDescription": "Specifies if case should be ignored when performing **plain searches**. Internally, this enables the `i` regex flag. See the [JavaScript RegExp docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters).",
           "type": "boolean",
           "default": true,
           "scope": "application"
         },
-        "multiCursorSearch.regexpSearch.ignoreCase": {
-          "markdownDescription": "Specifies if the ignore case (`i`) flag should be used when performing **RegExp searches**. See the [JavaScript RegExp docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters).",
+        "multiCursorSearch.regexSearch.ignoreCase": {
+          "markdownDescription": "Specifies if the ignore case (`i`) flag should be used when performing **regex searches**. See the [JavaScript RegExp docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters).",
           "type": "boolean",
           "default": true,
           "scope": "application"
         },
-        "multiCursorSearch.regexpSearch.multiline": {
-          "markdownDescription": "Specifies if the multiline (`m`) flag should be used when performing **RegExp searches**. See the [JavaScript RegExp docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters).",
+        "multiCursorSearch.regexSearch.multiline": {
+          "markdownDescription": "Specifies if the multiline (`m`) flag should be used when performing **regex searches**. See the [JavaScript RegExp docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters).",
           "type": "boolean",
           "default": true,
           "scope": "application"
         },
-        "multiCursorSearch.regexpSearch.dotAll": {
-          "markdownDescription": "Specifies if the \"dotAll\" (`s`) flag should be used when performing **RegExp searches**. See the [JavaScript RegExp docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters).",
+        "multiCursorSearch.regexSearch.dotAll": {
+          "markdownDescription": "Specifies if the \"dotAll\" (`s`) flag should be used when performing **regex searches**. See the [JavaScript RegExp docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters).",
           "type": "boolean",
           "default": true,
           "scope": "application"
         },
-        "multiCursorSearch.regexpSearch.unicode": {
-          "markdownDescription": "Specifies if the Unicode (`u`) flag should be used when performing **RegExp searches**. See the [JavaScript RegExp docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters).",
+        "multiCursorSearch.regexSearch.unicode": {
+          "markdownDescription": "Specifies if the Unicode (`u`) flag should be used when performing **regex searches**. See the [JavaScript RegExp docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp#Parameters).",
           "type": "boolean",
           "default": true,
           "scope": "application"
