@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
+## [2.0.2] - 2019-08-04
+### Changed
+- Removed markdown from non-markdown descriptions
+
 ## [2.0.1] - 2019-08-04
 ### Added
 - Non-markdown descriptions to configuration contribs
@@ -30,7 +34,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 ### Added
 - Inital Release
 
-[Unreleased]: https://github.com/yo1dog/vscode-multi-cursor-search/compare/v2.0.1...HEAD
+[Unreleased]: https://github.com/yo1dog/vscode-multi-cursor-search/compare/v2.0.2...HEAD
+[2.0.2]: https://github.com/yo1dog/vscode-multi-cursor-search/compare/v2.0.1...v2.0.2
 [2.0.1]: https://github.com/yo1dog/vscode-multi-cursor-search/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/yo1dog/vscode-multi-cursor-search/compare/v1.0.2...v2.0.0
 [1.0.2]: https://github.com/yo1dog/vscode-multi-cursor-search/compare/v1.0.1...v1.0.2
