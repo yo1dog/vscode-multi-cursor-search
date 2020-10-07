@@ -14,8 +14,10 @@
   "activationEvents": [
     "onCommand:yo1dog.multi-cursor-search.plainSearch",
     "onCommand:yo1dog.multi-cursor-search.plainSearchSelectBetween",
+    "onCommand:yo1dog.multi-cursor-search.plainSearchExpandSelection",
     "onCommand:yo1dog.multi-cursor-search.regexSearch",
     "onCommand:yo1dog.multi-cursor-search.regexSearchSelectBetween",
+    "onCommand:yo1dog.multi-cursor-search.regexSearchExpandSelection",
     "onCommand:yo1dog.multi-cursor-search.advancedSearch"
   ],
   "main": "./extension/extension.js",
@@ -30,12 +32,20 @@
         "title": "Multi-Cursor Plain Search (Select Between)"
       },
       {
+        "command": "yo1dog.multi-cursor-search.plainSearchExpandSelection",
+        "title": "Multi-Cursor Plain Search (Expand Selection)"
+      },
+      {
         "command": "yo1dog.multi-cursor-search.regexSearch",
         "title": "Multi-Cursor Regex Search"
       },
       {
         "command": "yo1dog.multi-cursor-search.regexSearchSelectBetween",
         "title": "Multi-Cursor Regex Search (Select Between)"
+      },
+      {
+        "command": "yo1dog.multi-cursor-search.regexSearchExpandSelection",
+        "title": "Multi-Cursor Regex Search (Expand Selection)"
       },
       {
         "command": "yo1dog.multi-cursor-search.advancedSearch",
