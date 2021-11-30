@@ -2,6 +2,7 @@
   "name": "multi-cursor-search",
   "displayName": "Multi-Cursor Search",
   "description": "Search from multiple cursors at once.",
+  "icon": "img/icon.png",
   "version": "2.0.4",
   "publisher": "yo1dog",
   "engines": {
@@ -20,7 +21,12 @@
     "onCommand:yo1dog.multi-cursor-search.regexSearchExpandSelection",
     "onCommand:yo1dog.multi-cursor-search.advancedSearch"
   ],
-  "main": "./extension/extension.js",
+  "main": "./extension.js",
+  "browser": "./extension.js",
+  "extensionKind": [
+    "ui",
+    "workspace"
+  ],
   "contributes": {
     "commands": [
       {
@@ -120,13 +126,8 @@
       }
     }
   },
-  "scripts": {
-    "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "node ./node_modules/vscode/bin/test"
-  },
   "devDependencies": {
-    "eslint": "^6.1.0",
-    "vscode": "^1.1.36"
+    "eslint": "^8.3.0"
   },
   "dependencies": {},
   "bugs": {

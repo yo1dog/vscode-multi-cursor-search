@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2018",
+    "lib": ["ES2018"]
+  },
+  "files": [
+    "extension.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -4,12 +4,13 @@
     "ecmaVersion": 2018,
     "sourceType": "script",
     "ecmaFeatures": {
-      "impliedStrict": true,
-      "jsx": true
+      "impliedStrict": true
     }
   },
   "env": {
-    "node": true
+    "shared-node-browser": true,
+    "commonjs": true,
+    "es6": true
   },
   "rules": {
     "getter-return": "error",
