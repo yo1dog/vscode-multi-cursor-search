@@ -3,7 +3,7 @@
   "displayName": "Multi-Cursor Search",
   "description": "Search from multiple cursors at once.",
   "icon": "img/icon.png",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "publisher": "yo1dog",
   "engines": {
     "vscode": "^1.1.36"
